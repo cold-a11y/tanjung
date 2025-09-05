@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기후 AI탄중이</title>
+    <link rel="icon" href="./images/favicon.png">
+
+    <script src="./js/jquery-latest.min.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="./refer/swiper/css/swiper.min.css">
+    <script type="text/javascript" src="./refer/swiper/js/swiper.min.js"></script>        
+    
+    <link rel="stylesheet" href="./css/style-tan.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="line"></div>
+        <div class="inner">
+            <h2>기후 AI탄중이</h2>
+            <div class="menu-area">
+                <button class="btn-menu">
+                    <img src="./images/icons/three-dots.svg" alt="">
+                </button>
+                <div class="sub-menu">
+                    <button class="refresh">대화 초기화</button>
+                    <button class="ver">version 2.5</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            $('.menu-area .btn-menu').on('click', function(e){
+                $(this).siblings('.sub-menu').fadeToggle();
+            });
+           $('html').click(function(e){ 
+                if($(e.target).parents('.menu-area').length < 1){$('.menu-area .sub-menu').fadeOut();};
+           }); 
+        </script>
+    </header>
+    <!-- End Header -->
+
+    <!-- Chat Container -->
+    <div class="chat-wrapper max-wid">
+
+        <!-- Top Intro -->
+        <div class="introTop">
+            <p>안녕하세요! 저는 여러분을 돕기 위해 준비된 AI 비서 <strong>'탄중이'</strong>입니다.</span></p>
+            <p class="desc">기후행동 기회소득 앱과 관련된 정보나 도움이 필요하시면 언제든 말씀해 주세요! 무엇을 도와드릴까요?</p>
+        </div>
+        <!-- End Top Intro -->
+
+        <!-- Slide Contents -->
+        <div class="message assistant array-col">
+            
+            <div class="slide-wrapp">
+                <div class="swiper-container chat-slide">
+                    <div class="swiper-wrapper">
+                        <!-- Slide Item -->
+                        <div class="swiper-slide chat infoBx">
+                            <div class="info2-Box">
+                                <div class="title">
+                                    <span class="tit">알리미</span>
+                                </div>
+                                <div class="desc">
+                                    추천 소식을 확인해 보세요.
+                                </div>
+                                <div class="btn-list20 faq">
+                                    <button>기행기후 앱 신규 서비스</button>
+                                    <button>추가 포인트 얻는 법?</button>
+                                    <button>2월 신규 이벤트 정보</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Slide Item -->
+
+                        <div class="swiper-slide chat infoBx">
+                            <div class="info2-Box">
+                                <div class="title">
+                                    <span class="tit">자주 묻는 질문</span>
+                                </div>
+                                <div class="desc">
+                                    자주 묻는 질문들을 확인해 보세요.
+                                </div>
+                                <div class="btn-list20 faq">
+                                    <button>리워드 적립은 어떻게 하나요?</button>
+                                    <button>기행기소 앱은 어디서 다운을 받나요?</button>
+                                    <button>탄소중립은 무엇인가요?</button>
+                                </div>
+                            </div>
+                        </div>  
+                        
+                        <div class="swiper-slide chat infoBx">
+                            <div class="info2-Box">
+                                <div class="title">
+                                    <span class="tit">도전! 미션!</span>
+                                </div>
+                                <div class="desc">
+                                    기행기후 앱이 준비한 혜택
+                                </div>
+                                <div class="btn-list20 faq">
+                                    <button>지금 포인트 받기</button>
+                                    <button>포인트 x2 받기</button>
+                                    <button>포인트 전환하기</button>
+                                </div>
+                            </div>
+                        </div>                         
+                    </div>
+                </div>
+                <div class="sw-pagination"></div>
+            </div>
+            <!-- End Slide Contents -->
+            <div class="add"><span class="help-link"><a href="">고객소통센터</a></span></div>
+        </div>
+        <!-- End Slide Contents -->
+        <span class="date">2025. 1. 14 화요일</span>
+
+        <!-- User Question -->
+        <div class="message user">
+            <div class="date">오전 09:03</div>
+            <div class="chat">
+                기후행동이란 무엇인가요?
+            </div>
+        </div>
+        <!-- End User Question -->
+
+        <!-- Answer Contents -->
+        <div class="message answer">
+            <div class="date">오전 09:12</div>
+            <div class="chat">
+                기후행동이란 기후 위기에 대응하기 위한 다양한 활동을 의미합니다. <br>
+                이는 전문가들만의 영역이 아니라, 개인이 일상에서 작은 것부터 실천할 수 있는 활동을 포함합니다. 예를 들어, 나무를 심거나 에너지를 절약하는 등의 행동이 기후행동에 해당됩니다. <br><br>
+                기후행동을 통해 우리는 환경에 긍정적인 영향을 미치고 지속 가능한 미래를 만들어갈 수 있습니다. 좋은 질문이네요!
+                <span class="source_gpt"></span>
+            </div>
+            <!-- <div class="add"><span class="help-link"><a href="">고객소통센터</a></span></div> -->
+        </div>
+        <!-- End Answer Contents -->
+
+        <!-- User Question -->
+        <div class="message user">
+            <div class="date">오전 09:03</div>
+            <div class="chat">
+                자주 묻는 질문을 알려줘
+            </div>
+        </div>
+        <!-- End User Question -->
+
+        <!-- Answer Contents -->
+        <div class="message assistant">
+            <div class="date">오전 09:12</div>
+            <div class="chat infoBx">
+                <!-- Infomation Box -->
+                <div class="info2-Box">
+                    <div class="title">
+                        <span class="tit">자주 묻는 질문</span>
+                    </div>
+                    <div class="desc">
+                        자주 묻는 질문들을 확인해 보세요.
+                    </div>
+                    <div class="btn-list20 faq">
+                        <button>리워드 적립은 어떻게 하나요?</button>
+                        <button>기행기소 앱은 어디서 다운을 받나요?</button>
+                        <button>탄소중립은 무엇인가요?</button>
+                    </div>
+                </div>
+                <!-- End Infomation Box -->
+            </div>
+            <div class="add"><span class="help-link"><a href="">고객소통센터</a></span></div>
+        </div>
+        <!-- End Answer Contents -->
+
+        <div class="message assistant">
+            <div class="date">오전 09:12</div>
+            <div class="chat infoBx">
+                경기도 기후행동 기회소득 앱 서비스를 이용하기 위해서는 다음과 같은 동의 및 기본 진행이 필요합니다.
+                <div class="btn-list20 desc-list">
+                    <button>경기도민 확인</button>
+                    <button>주소검증 동의</button>
+                    <button>제3자 서비스 동의</button>
+                </div>
+            </div>
+            <div class="add"><span class="help-link"><a href="">고객소통센터</a></span></div>
+        </div>
+
+        <div class="message user">
+            <div class="date">오전 08:45</div>
+            <div class="chat">
+                날씨를 알려줘
+            </div>
+        </div>
+
+        <!-- Slide Contents -->
+        <div class="message assistant array-col">
+            <div class="date">오전 09:02</div>
+            <div class="slide-wrapp">
+                <div class="swiper-container chat-slide">
+                    <div class="swiper-wrapper">
+                        <!-- Slide Item -->
+                        <div class="swiper-slide chat infoBx">
+                            <div class="weather-Box">
+                                <div class="title">
+                                    <span class="tit">서울</span>
+                                </div>
+                                <div class="weather-state">
+                                    <div class="icon-weather">
+                                        <img src="./images/weather-icon/cloud-sun.svg" alt="">
+                                    </div>
+                                    <div class="report">
+                                        <p class="temperature">3</p>
+                                        <p class="state">흐림</p>
+                                    </div>
+                                </div>
+                                <div class="temper-box">
+                                    <span class="min">2.0</span>
+                                    <i></i>
+                                    <span class="max">7.0</span>
+                                </div>
+                                <div class="etc-box">
+                                    <div class="wind">2ms</div>
+                                    <div class="rain">50%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Slide Item -->
+
+                        <div class="swiper-slide chat infoBx">
+                            <div class="weather-Box">
+                                <div class="title">
+                                    <span class="tit">부산</span>
+                                </div>
+                                <div class="weather-state">
+                                    <div class="icon-weather">
+                                        <img src="./images/weather-icon/sun.svg" alt="">
+                                    </div>
+                                    <div class="report">
+                                        <p class="temperature">5</p>
+                                        <p class="state">맑음</p>
+                                    </div>
+                                </div>
+                                <div class="temper-box">
+                                    <span class="min">4.0</span>
+                                    <i></i>
+                                    <span class="max">9.0</span>
+                                </div>
+                                <div class="etc-box">
+                                    <div class="wind">0.5ms</div>
+                                    <div class="rain">20%</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide chat infoBx">
+                            <div class="weather-Box">
+                                <div class="title">
+                                    <span class="tit">경기</span>
+                                </div>
+                                <div class="weather-state">
+                                    <div class="icon-weather">
+                                        <img src="./images/weather-icon/rain.svg" alt="">
+                                    </div>
+                                    <div class="report">
+                                        <p class="temperature">4</p>
+                                        <p class="state">비</p>
+                                    </div>
+                                </div>
+                                <div class="temper-box">
+                                    <span class="min">2.0</span>
+                                    <i></i>
+                                    <span class="max">3.0</span>
+                                </div>
+                                <div class="etc-box">
+                                    <div class="wind">2ms</div>
+                                    <div class="rain">50%</div>
+                                </div>
+                            </div>
+                        </div>    
+
+                        <div class="swiper-slide chat infoBx">
+                            <div class="weather-Box">
+                                <div class="title">
+                                    <span class="tit">대구</span>
+                                </div>
+                                <div class="weather-state">
+                                    <div class="icon-weather">
+                                        <img src="./images/weather-icon/cloud3.svg" alt="">
+                                    </div>
+                                    <div class="report">
+                                        <p class="temperature">6</p>
+                                        <p class="state">구름</p>
+                                    </div>
+                                </div>
+                                <div class="temper-box">
+                                    <span class="min">4.0</span>
+                                    <i></i>
+                                    <span class="max">8.0</span>
+                                </div>
+                                <div class="etc-box">
+                                    <div class="wind">1.1ms</div>
+                                    <div class="rain">20%</div>
+                                </div>
+                            </div>
+                        </div>    
+
+                    </div>
+                </div>
+                <div class="sw-pagination"></div>
+            </div>
+            <!-- End Slide Contents -->
+            <div class="add"><span class="sources">날씨정보</span></div>
+        </div>
+        <!-- End Slide Contents -->
+
+        <div class="message assistant">
+            <div class="date">오전 09:12</div>
+            <div class="chat">
+                <!-- Loading Text -->
+                <div class="loading">
+                    답변을 생성 중입니다. 잠시만 기다려 주세요.
+                    <span class="loading-img"></span>
+                </div>
+                <!-- End Loading Text -->
+            </div>
+        </div>
+
+        <div class="message user">
+            <div class="date">오전 09:03</div>
+            <div class="chat">
+                오늘 서울 날씨를 알려줘
+            </div>
+        </div>
+        <div class="message assistant">
+            <div class="date">오전 09:12</div>
+            <div class="chat infoBx">
+                <!-- weather infomation -->
+                <div class="weather-Box">
+                    <div class="title">
+                        <span class="tit">서울</span>
+                    </div>
+                    <div class="weather-state">
+                        <div class="icon-weather">
+                            <img src="./images/weather-icon/cloud-sun.svg" alt="">
+                        </div>
+                        <div class="report">
+                            <p class="temperature">3</p>
+                            <p class="state">흐림</p>
+                        </div>
+                    </div>
+                    <div class="temper-box">
+                        <span class="min">2.0</span>
+                        <i></i>
+                        <span class="max">7.0</span>
+                    </div>
+                    <div class="etc-box">
+                        <div class="wind">2ms</div>
+                        <div class="rain">50%</div>
+                    </div>                    
+                </div>
+                <!-- End weather infomation -->
+            </div>
+            <div class="add"><span class="sources">날씨정보</span></div>
+        </div>
+
+        <span class="date">2025. 1. 15 수요일</span>
+
+        <div class="message user">
+            <div class="date">오전 10:15</div>
+            <div class="chat">
+                기후 AI탄중이가 무엇인지 알려줘
+            </div>
+        </div>
+        <div class="message assistant">
+            <div class="date">오전 10:17</div>
+            <div class="chat">
+                안녕하세요! "탄중이"는 기후행동 기회소득(기행기소) 앱에 탑재된 AI 고객센터입니다. <br>
+                이름은 '탄소중립'에서 유래되었으며, 환경과 에너지를 사랑하는 디지털 도우미로서 사용자에게 친근하고 신뢰할 수 있는 서비스를 제공하는 것이 목적입니다.
+                <span class="source_gpt"></span>
+            </div>
+            <div class="add"><span class="sources">GPT검색</span></div>
+        </div>
+
+        <div class="message user">
+            <div class="date">오전 10:15</div>
+            <div class="chat">
+                탄중이 포인트를 많이 받을 수 있는 방법을 알려줘
+            </div>
+        </div>
+        <div class="message assistant">
+            <div class="date">오전 10:17</div>
+            <div class="chat">
+                탄중이 포인트를 많이 얻는 방법은 주로 기후 관련 실천 행동을 통해 이루어집니다. '기후행동 기회소득'은 기후 관련 실천 행동 15개 분야를 통해 리워드를 적립할 수 있는 제도입니다. 다양한 실천 활동에 참여함으로써 포인트를 쌓을 수 있으며, 구체적인 활동 목록은 해당 프로그램의 안내를 참고하시면 됩니다. 
+                <span class="source_gpt"></span>
+            </div>
+            <div class="add"><span class="sources">GPT검색</span></div>
+        </div>
+
+    </div>
+    <!-- End Chat Container -->
+
+    <!-- Chat input Box -->
+    <form action="">
+        <div class="chatInput-wrap">
+            <div class="inner max-wid">
+                    <textarea class="input-style20" placeholder="탄중이에게 물어봐 주세요" ></textarea>
+                    <button class="btn-submit">
+                        <img src="./images/icons/send.svg" alt="">
+                    </button>
+            </div>
+        </div>
+    </form>
+    
+    <script>
+        // Contents Slide Script
+        const chatBoxSlide20 = $('.message.array-col');
+        chatBoxSlide20.each(function(index, element){
+            let $this = $(this);
+
+            $this.children('.slide-wrapp').find('.chat-slide').addClass('swpAi'+index);
+            $this.children('.slide-wrapp').find('.sw-pagination').addClass('swPG'+index);
+
+            const swiper = new Swiper('.swpAi'+index, {
+                observer: true,
+                observeParents: true,
+                slidesPerView: 2.5,
+                spaceBetween: 15,
+                breakpoints: {
+                    768: {slidesPerView: 1.2,},
+                },
+                pagination: {
+                    el: '.swPG'+index,
+                    type: 'bullets',
+                    clickable: 'true',
+                },                                    
+                });  
+        });
+    </script>
+</body>
+</html>
